@@ -4,13 +4,10 @@ public abstract class Vehicle {
     private String name;
 
     public Vehicle(String name) {
-        super(name);
+        this.name = name;
     }
 
-    @Override
-    public abstract int getMaxSpeed() {
-        return 50;
-    }
+    public abstract int getMaxSpeed();
     public String getName() {
         return name;
     }
